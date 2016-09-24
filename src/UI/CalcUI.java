@@ -427,7 +427,7 @@ public class CalcUI extends javax.swing.JFrame {
                 if(eval.isOperator(eval.getInfixTop())) {
                     if(led.getText().equals(""))
                        led.setText("0.");
-                    else
+                    else if(!led.getText().contains("."))
                         led.setText(led.getText() + but);
                 }
                 else if(!led.getText().contains(".")) {
